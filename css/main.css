@@ -17,3 +17,465 @@ body {
   font-family: 'Cabin', sans-serif;
 }
 
+.flex{
+  display:flex;
+}
+
+.grid1{
+  display:grid;
+  background-color: rgb(255, 255, 255);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid2{
+  display:grid;
+  margin: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid1 img{
+  height:80px;
+  width:80px;
+  padding:10px;
+}
+
+/* Header */
+.rover-header-container{
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.rover-header-container a{
+  text-decoration: none;
+  color:black;
+  align-items:center;
+  align-content: center;
+  justify-content: center;
+}
+
+.rover-header-left a{
+  margin-top: 10px;
+  padding:10px;
+}
+
+.rover-header-right a{
+  padding:10px;
+}
+
+.rover-header-container img{
+  height:40px;
+  padding:10px;
+}
+
+
+.rover-header-right-mobile button{
+  display: none;
+  border: solid 1px rgb(153, 151, 151);
+  border-radius: 2px;
+  background-color: white;
+  padding: 2px;
+}
+
+.rover-header-right-mobile img{
+  height:20px;
+}
+
+
+@media only screen and (max-width: 500px){
+  .rover-header-right-mobile button{
+      display: block;
+      size:10%;
+      position: absolute;
+      right:10px;
+      top:10px;
+  }
+
+  .rover-header-left a{
+    display: none;
+  }
+  
+  .rover-header-right a{
+    display: none;
+  }
+}
+
+/*Rover Hero*/
+.rover-hero-container{
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/hero.jpg");
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rover-hero-container h1{
+  font-size: 40px;
+  color: rgb(95, 95, 95);
+  padding-left: 15px;
+}
+
+
+.rover-hero-container p{
+  width: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(95, 95, 95);
+  padding-left: 15px;
+}
+
+.rover-hero-container2{
+  display:none;
+  height: 30%;
+  flex-direction: column;
+  background-color: white;
+
+}
+
+.rover-hero-container-mobile{
+  margin:20px;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  align-items:center;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  color: rgb(95, 95, 95);
+  border: solid 3px rgb(230, 230, 230);
+}
+
+@media only screen and (max-width: 500px){
+  .rover-hero-container2{
+    display: block;
+  }
+.rover-hero-container{
+  display: none;
+  }
+
+  #Btn2:hover{
+  background-color: #10724b;
+  cursor: pointer;
+  }
+}
+
+#Btn1{
+  justify-content: center;
+  align-items: center;
+  border-radius:5px;
+  border: solid 1px black;
+  font-size: 17px;
+  margin: 15px;
+  color: white;
+  height: 50px;
+  width: 350px;
+  background-color: #14a96d;
+}
+
+#Btn2{
+  justify-content: center;
+  align-items: center;
+  border-radius:5px;
+  border: solid 1px black;
+  font-size: 17px;
+  margin: 15px;
+  color: white;
+  height: 50px;
+  width:400px;
+  min-width:max-content;
+  background-color:#14a96d;
+}
+
+#Btn1:hover,
+#Btn1:focus {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid rgb(138, 138, 138);
+  height:30%;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+.close {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius:5px;
+  border: solid 1px black;
+  font-size: 20px;
+  color: white;
+  height: 50px;
+  width: 350px;
+  background-color: rgb(24, 153, 56);
+}
+
+@media only screen and (max-width: 500px){
+  .close {
+    max-width: 60%;
+  }
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*ROver Facts*/
+.rover-mobile-hero{
+  height:220px;
+  width:220px;
+padding:10px;
+}
+
+.rover-mobile-hero_img{
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+}
+
+.rover-mobile-hero{
+  display:none;
+}
+
+.rover-fact-indiv .text{
+  width: 400px;
+  flex-direction: column;
+
+}
+
+.rover-middle-section h2{
+  margin:5px;
+  font-size: 30px;
+}
+
+.rover-middle-section{
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 500px){
+  .rover-middle-section_container{
+    flex-direction: column;
+  }
+
+ .rover-mobile-hero{
+    display:block;
+  }
+}
+
+.rover-cta-box img{
+  height:40px;
+  width: 40px;
+  padding: 15px;
+}
+
+.rover-cta-box{
+  margin:50px;
+}
+
+.rover-cta-header{
+padding-left: 20px;
+padding-right: 20px;
+flex-direction: row;
+background-color: rgb(238, 238, 238);
+align-items: center;
+justify-content: center;
+border-left: 2px solid rgb(214, 214, 214);
+border-right: 2px solid rgb(214, 214, 214);
+border-top: 2px solid rgb(214, 214, 214);
+}
+
+.rover-cta-bottom-container{
+  flex-direction: column;
+  padding:10px;
+  height:200px;
+  border: 2px solid rgb(214, 214, 214);
+}
+
+.rover-protections a{
+color: #0068c9;
+}
+
+.rover-protections a:hover{
+  color: #07006b9f;
+  }
+
+.rover-facts-container{
+  padding:10px;
+  width:50%;
+  margin: 20px;
+}
+
+#Btn3{
+  justify-content: center;
+  align-items: center;
+  border-radius:5px;
+  border: solid 1px black;
+  font-size: 17px;
+  margin: 15px;
+  color: white;
+  height: 50px;
+  width:400px;
+  min-width:max-content;
+  background-color:#14a96d;
+}
+
+#Btn3:hover{
+  background-color: #23493a;
+  cursor: pointer;
+  }
+
+/*Rover action*/
+.rover-action-dash{
+  width:80px;
+  border:solid #14a96d;
+}
+
+.rover-action-quote-container{
+  position:relative;
+  top:-40px;
+  left:40px;
+  background-color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  height:300px;
+  width: 380px;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom:5px;
+  padding-left:30px;
+  padding-right:30px;
+  border:solid 2px rgb(216, 216, 216);
+}
+
+.rover-action-quote-container span{
+  font-size: 30px;
+  color: grey;
+}
+
+.rover-action-quote-container a{
+  text-decoration: none;
+  color:#14a96d;
+}
+.rover-action-quote-container a:hover{
+  text-decoration: none;
+  color:#10724b;
+}
+
+.rover-action-shot{
+  margin-left:auto ;
+  margin-right:auto ;
+  margin-top:30px;
+  background-size: 100%;
+  width:1400px;
+  height:590px;
+  background-image: url("../img/lady-with-her-dogs.jpg");
+}
+
+@media only screen and (max-width: 500px){
+  .rover-action-quote-container{
+    position:relative;
+    top:0px;
+    left: 0px;
+    width:405px;
+}
+
+.rover-action-shot{
+  background-size: cover;
+  width: 469px;
+  height:600px;
+  margin:1px;
+  }
+}
+
+/*Rover 1-2-3*/
+.rover-123-item{
+flex-direction: column;
+align-items: center;
+}
+
+.rover-123-item img{
+  width:110px;
+  height:110px;
+}
+
+.rover-123-container{
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+
+.rover-123-container-title{
+  padding:20px;
+}
+
+.grid3{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.text123{
+  flex-direction: column;
+  margin: 20px;
+}
+
+@media only screen and (max-width: 500px){
+  .grid3{
+    grid-template-columns: 1fr;
+    row-gap: 70px;
+  }
+  .rover-123-item img{
+    padding: 10px;
+    height:100px;
+    width:100px;
+  }
+  .text123{
+    flex-direction: column;
+    margin: 20px;
+  }
+
+    .rover-123-item{
+      flex-direction: row;
+      }
+}

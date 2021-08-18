@@ -7,7 +7,7 @@
   <meta name="description" content="Rover sample site">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/normalize.css">
+  <!--link rel="stylesheet" href="css/normalize.css">-->
   <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -16,81 +16,119 @@
   <main class="rover-hp-container">
 
     <!--Rover Header-->
-    <header class="rover-header-container">
-      <section class="rover-header-left">
+    <header class="rover-header-container flex">
+      <section class="rover-header-left flex">
         <img class="rover-header-image" src="img/logo.png" alt="Rover logo">
         <a class="rover-header-link" href="#">Search Sitters</a>
         <a class="rover-header-link" href="#">Become a Sitter</a>
         <a class="rover-header-link" href="#">Our Services</a>
       </section>
-      <section class="rover-header-right">
+      <section class="rover-header-right-mobile">
+        <button>
+          <img src="img/hamburger.svg" alt="hamburger-icon">
+        </button>
+        </section>
+      <section class="rover-header-right flex">
         <a class="rover-header-link" href="#">Sign Up</a>
         <a class="rover-header-link" href="#">Sign In</a>
         <a class="rover-header-link" href="#">Help</a>
       </section>
-      <section class="rover-header-right-mobile">
-        <img src="img/hamburger.svg" alt="hamburger-icon">
-      </section>
+
     </header>
 
     <!--Rover Hero Container-->
-    <section class="rover-hero-container">
+    <section class="rover-hero-container flex">
       <h1 class="rover-hero-title">We're the Dog People</h1>
       <p>Book trusted, local pet sitters and walkers who will care for your dog or cat like you would.</p>
-      <div class="rover-button rover-cta">Search</div>
-      <div class="rover-button rover-cta-mobile">Discover local sitters</div>
+      <div class="rover-button rover-cta">
+        <button class="flex" id="Btn1">Search</button>
     </section>
 
-    <!--Rover Facts Container-->
-    <section class="rover-middle-section">
-      <h2>Services for every dog and cat</h2>
-      <div class="rover-mobile-hero-container">
-        <img class="rover-mobile-hero" src="img/mobile-hero-1.jpg" alt="mobile hero">
-        <img class="rover-mobile-hero" src="img/mobile-hero-2.jpg" alt="mobile hero">
+    <section class="rover-hero-container2 flex">
+      <div class="rover-hero-container-mobile flex">
+      <p>Book trusted, local pet sitters and walkers who will care for your dog or cat like you would.</p>
+      <div class="rover-button rover-cta">
+        <button class="flex" id="Btn2">Discover local sitters</button>
       </div>
+      </section>
+      
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
-      <section class="rover-two-boxes-container">
-        <section class="rover-facts-container">
-          <div class="rover-fact-indiv rover-fact-indiv-1">
+  <!-- Modal content -->
+  <div class="modal-content flex">
+     <h2>Book trusted, local pet sitters and walkers who will care for your dog or cat like you would.</h2>
+    <span class="close flex">Maybe later</span>
+  </div>
+</div>
+
+    <!--Rover Facts Container-->
+    <section class="rover-middle-section flex">
+      <h2>Services for every dog and cat</h2>
+      <section class="rover-middle-section_container flex">
+        <div class="rover-mobile-hero_img flex">
+          <img class="rover-mobile-hero" src="img/mobile-hero-1.jpg" alt="mobile hero">
+          <img class="rover-mobile-hero" src="img/mobile-hero-2.jpg" alt="mobile hero">
+        </div>
+
+      <section class="rover-two-boxes-container grid2 flex">
+        <section class="rover-facts-container grid1 flex">
+
+          <div class="flex rover-fact-indiv rover-fact-indiv-1">
             <img src="img/suitcase.png" alt="Suitcase image">
-            <h3>Dog Boarding</h3>
-            <p>Perfect if you need overnight pet care.</p>
+            <div class="text">
+              <h3>Dog Boarding</h3>
+              <p>Perfect if you need overnight pet care.</p>
+           </div>
           </div>
-          <div class="rover-fact-indiv rover-fact-indiv-2">
+
+          <div class="flex rover-fact-indiv rover-fact-indiv-2">
             <img src="img/house.png" alt="House image">
+            <div class="text">
             <h3>House Sitting</h3>
             <p>Great if you need overnight pet or house-sitting services.</p>
           </div>
-          <div class="rover-fact-indiv rover-fact-indiv-3">
+          </div>
+
+          <div class="flex rover-fact-indiv rover-fact-indiv-3">
             <img src="img/paws.png" alt="Paws image">
-            <h3>Dog walking</h3>
-            <p>Whenever your dog needs a walk.</p>
+            <div class="text">
+                <h3>Dog walking</h3>
+                <p>Whenever your dog needs a walk.</p>
+              </div>  
           </div>
-          <div class="rover-fact-indiv rover-fact-indiv-4">
+
+          <div class="flex rover-fact-indiv rover-fact-indiv-4">
             <img src="img/sun.png" alt="Sun image">
-            <h3>Doggy Day Care</h3>
-            <p>Daytime pet care in your sitter’s dog-friendly home.</p>
+            <div class="text">
+                <h3>Doggy Day Care</h3>
+                <p>Daytime pet care in your sitter’s dog-friendly home.</p>
+              </div>
           </div>
-          <div class="rover-fact-indiv rover-fact-indiv-5">
+          
+          <div class="flex rover-fact-indiv rover-fact-indiv-5">
             <img src="img/food.png" alt="Food image">
-            <h3>Drop-In Visits</h3>
-            <p>For check-ins and play dates.</p>
+            <div class="text">
+                <h3>Drop-In Visits</h3>
+                <p>For check-ins and play dates.</p>
+             </div>
           </div>
         </section>
+      </section>
 
         <section class="rover-cta-box">
           <div class="rover-cta-container">
-            <header class="rover-cta-header">
+            <header class="rover-cta-header flex">
               <img src="img/shield.png" alt="shield icon">
               <p>Rover accepts less than 20% of potential sitters</p>
             </header>
-            <div class="rover-cta-bottom-container">
+            <div class="flex rover-cta-bottom-container">
               <ul class="rover-facts">
                 <li>All new sitters pass a basic background check</li>
                 <li>All sitters provide a detailed profile and personal information</li>
                 <li>All sitters are approved by our team of sitter specialists</li>
               </ul>
-              <div class="rover-cta">Book your next Rover sitter</div>
+              <div class="rover-cta flex" id="Btn3">Book your next Rover sitter</div>
             </div>
           </div>
           <p class="rover-protections">All services booked on Rover are backed by the Rover Guarantee, 24/7 Support, Photo Updates, and our <a href="#">Reservation Protection</a>.</p>
@@ -100,31 +138,38 @@
 
     <!--Rover action-->
     <section class="rover-action-shot">
-      <aside class="rover-action-quote-container">
+      <aside class="rover-action-quote-container flex">
         <div class="rover-action-dash"></div>
-        <p class="rover-quote">My Rover sitter sent me updates throughout the day and took care of my dog as if she were her own. <span>Corinna F.</span></p>
+        <p class="rover-quote">My Rover sitter sent me updates throughout the day and took care of my dog as if she were her own. </p>
+        <span>- Corinna F.</span>
         <p>We’re The Dog People. <a href="#">Learn More</a></p>
       </aside>
     </section>
 
     <!--Rover 1-2-3-->
-    <section class="rover-123-container">
+    <section class="rover-123-container flex">
       <h2 class="rover-123-container-title">We’re the treat-your-dog-like-family dog people</h2>
-      <div class="rover-123-item-container">
-        <div class="rover-123-item">
+      <div class="rover-123-item-container grid3">
+        <div class="flex rover-123-item">
           <img src="img/watchglass.png" alt="search">
+          <div class="flex text123">
           <h3>Search</h3>
           <p>Read verified reviews and pick the perfect sitter.</p>
+          </div>
         </div>
-        <div class="rover-123-item">
+        <div class="flex rover-123-item">
           <img src="img/phone.png" alt="phone">
+          <div class="flex text123">
           <h3>Book & pay on Rover</h3>
           <p>Book and pay securely through the website or app.</p>
         </div>
-        <div class="rover-123-item">
+        </div>
+        <div class="flex rover-123-item">
           <img src="img/shield.png" alt="shield">
+          <div class=" flex text123">
           <h3>Relax</h3>
           <p>Get the Rover Guarantee, 24/7 support, and reservation protection.</p>
+        </div>
         </div>
       </div>
     </section>
