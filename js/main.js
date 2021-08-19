@@ -33,7 +33,7 @@ btn1.addEventListener('click', () =>{
 });
  
 btn2.addEventListener('click', () =>{
-    document.querySelector('.rover-hero-container').style.backgroundImage="url('https://github.com/lilian1116/fewd_mid_lab/blob/master/img/hero.jpg?raw=true')";
+    document.querySelector('.rover-hero-container').style.backgroundImage="url('../img/hero.jpg')";
     heading.innerHTML = "We're the DOG People";
     document.querySelector('.typetoogle h4').innerHTML = "Or maybe... You're a Cat Person?";
     document.querySelector('.typetoogle h4').style.color = "rgb(95, 95, 95)";
