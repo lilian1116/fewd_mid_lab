@@ -16,50 +16,94 @@
 
     <!--Rover Header-->
     <header class="rover-header-container flex">
-      <section class="rover-header-left flex">
+      <section class="rover-header-left headernav flex">
         <img class="rover-header-image" src="img/logo.png" alt="Rover logo">
         <a class="rover-header-link" href="#">Search Sitters</a>
         <a class="rover-header-link" href="#">Become a Sitter</a>
         <a class="rover-header-link" href="#">Our Services</a>
       </section>
       <section class="rover-header-right-mobile">
-        <button>
+        <button class="MobileMenu">
           <img src="img/hamburger.svg" alt="hamburger-icon">
         </button>
         </section>
-      <section class="rover-header-right flex">
-        <a class="rover-header-link" href="#">Sign Up</a>
+      <section class="rover-header-right headernav flex">
+        <a class="rover-header-link SignUP" href="#">Sign Up</a>
         <a class="rover-header-link" href="#">Sign In</a>
         <a class="rover-header-link" href="#">Help</a>
       </section>
+</div>
+</header>
 
-    </header>
+
+      <!--*SignUp-->
+      <div id="SignUPid" class="Signupmodal">
+
+        <div class="modal-content flex">
+          <span class="close">X</span>
+          <p>Come join our fury-friends loving community! </p>
+          <div class="userinput flex">
+
+            <div class="userinput_item flex">
+              <h6>Email :</h6>
+              <input></input>
+            </div>
+
+            <div class="userinput_item flex">
+              <h6>Name :</h6>
+              <input></input>
+            </div>
+
+            <div class="userinput_item flex">
+              <h6>Pass :</h6>
+              <input></input>
+            </div>
+            
+            </div>
+        </div>
+      </div>
+
+      <!--*MobileMenu-->
+            <div id="MobMenid" class="MobMenclass">
+              <div class="menu-mobile flex">
+                <span class="closemob">X</span>
+                <section class="mobilenav flex">
+                  <a class="rover-header-link SignUP" href="#">Sign Up</a>
+                  <a class="rover-header-link" href="#">Sign In</a>
+                  <a class="rover-header-link" href="#">Help</a>
+                  <a class="rover-header-link" href="#">Search Sitters</a>
+                  <a class="rover-header-link" href="#">Become a Sitter</a>
+                  <a class="rover-header-link" href="#">Our Services</a>
+                  </div>
+              </div>
+            </div>
+        
 
     <!--Rover Hero Container-->
     <section class="rover-hero-container flex">
-      <h1 class="rover-hero-title">We're the Dog People</h1>
+      <h1 class="rover-hero-title">We're the DOG People</h1>
       <p>Book trusted, local pet sitters and walkers who will care for your dog or cat like you would.</p>
       <div class="rover-button rover-cta">
-        <button class="flex" id="Btn1">Search</button>
+        <button class="flex buttonstyle1" id="Btn1">Search</button>
+        <div class="typetoogle">
+          <h4>Or maybe... You're a Cat Person?</h4>
+          <button class="buttonstyle2" id="Btn4">Cat</button>
+          <button class="buttonstyle2" id="Btn5">Dog</button>
+        </div>
     </section>
 
     <section class="rover-hero-container2 flex">
       <div class="rover-hero-container-mobile flex">
       <p>Book trusted, local pet sitters and walkers who will care for your dog or cat like you would.</p>
       <div class="rover-button rover-cta">
-        <button class="flex" id="Btn2">Discover local sitters</button>
+        <button class="flex buttonstyle1" id="Btn2">Discover local sitters</button>
+      </div>
+      <div class="typetoogle">
+        <h4>Or maybe... You're a Cat Person?</h4>
+        <button class="buttonstyle2" id="Btn4">Cat</button>
+        <button class="buttonstyle2" id="Btn5">Dog</button>
       </div>
       </section>
-      
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content flex">
-     <h2>Book trusted, local pet sitters and walkers who will care for your dog or cat like you would.</h2>
-    <span class="close flex">Maybe later</span>
-  </div>
-</div>
 
     <!--Rover Facts Container-->
     <section class="rover-middle-section flex">
@@ -127,7 +171,7 @@
                 <li>All sitters provide a detailed profile and personal information</li>
                 <li>All sitters are approved by our team of sitter specialists</li>
               </ul>
-              <div class="rover-cta flex" id="Btn3">Book your next Rover sitter</div>
+              <div class="rover-cta buttonstyle1 flex" id="Btn3">Book your next Rover sitter</div>
             </div>
           </div>
           <p class="rover-protections">All services booked on Rover are backed by the Rover Guarantee, 24/7 Support, Photo Updates, and our <a href="#">Reservation Protection</a>.</p>
